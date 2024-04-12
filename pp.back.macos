@@ -754,7 +754,7 @@ pp_backend_macos_flat () {
 	<?xml version="1.0" encoding="UTF-8"?>
 	<installer-gui-script minSpecVersion="1">
 	    <title>$name $version</title>
-	    <options customize="never" allow-external-scripts="no"/>
+	    <options customize="never" allow-external-scripts="no" ${pp_macos_pkg_extra_options}/>
 	    <domains enable_localSystem="true"/>
 .
     if test -n "$pp_macos_pkg_welcome"; then
